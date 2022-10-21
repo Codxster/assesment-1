@@ -38,6 +38,19 @@ console.log(middleNums)
 let bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
 
 // CODE HERE
+// KYLES ANSWER
+// const answers = []
+
+// for (let i = 0; i < bigOrSmallArray.length; i++) {
+//   if(bigOrSmallArray[i] > 100){
+//     answers.push('big')
+//   } else if (bigOrSmallArray[i] <= 100) {
+//     answers.push('small')
+//   }
+// }
+
+// console.log(answers)
+
 const answers = [];
   for(let i = 0; i < bigOrSmallArray.length; i++) {
     if(bigOrSmallArray[i] < 100){
@@ -46,6 +59,6 @@ const answers = [];
       answers.push('big');
        console.log(answers)
     }
-    // console.log(answers)
+   
   }
-// console.log(answers)  
+
