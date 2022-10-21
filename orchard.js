@@ -50,11 +50,17 @@ const pinkPrice = .55
 */
 
 // CODE HERE
+const totalAcresArray = [2,3,3,2,2,2,1,5,2,4,3,6,2,4,1,5,4,2,1,5,4];
+    let sum = 0;
+    let i = 0;
+    while (i <totalAcresArray.length) {
+        sum += totalAcresArray[i]
+        i++;
+    }
+    console.log(sum);
 
-
-
-
-
+        
+let totalAcres = 63
 // PROBLEM 2
 
 /*
@@ -69,6 +75,12 @@ const pinkPrice = .55
 
 // CODE HERE
 
+fujiAcresTotal = 15
+galaAcresTotal = 27
+pinkAcresTotal = 22
+
+let averageDailyAcres = (fujiAcresTotal + galaAcresTotal + pinkAcresTotal) / 3
+console.log(averageDailyAcres)
 
 
 
