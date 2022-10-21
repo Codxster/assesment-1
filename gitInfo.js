@@ -10,6 +10,8 @@
 */
 
 //CODE HERE
+const gitDefinition = "Git is mostly used for source code management and tracking changes in the source code" 
+    console.log(gitDefinition)
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -18,7 +20,8 @@
 */
 
 //CODE HERE
-
+const gitHubDefinition = "Github is a platform that hosts code for version control and collaboration"
+console.log(gitHubDefinition)
 //////////////////PROBLEM 3////////////////////
 /*
     Create a variable called 'gitInitDefinition'.  
@@ -26,7 +29,8 @@
 */
 
 //CODE HERE
-
+const gitInitDefinition = "The Git init command creates a new git repository(initializes)" 
+console.log(gitInitDefinition)
 //////////////////PROBLEM 4////////////////////
 /*
     Create a variable called 'gitCloneDefinition'.  
@@ -34,7 +38,8 @@
 */
 
 //CODE HERE
-
+const gitCloneDefinition = "The git clone command copies an existing git repository" 
+console.log(gitCloneDefinition)
 //////////////////PROBLEM 5////////////////////
 /*
     Create a variable called 'gitStatusDefinition'.  
@@ -42,7 +47,8 @@
 */
 
 //CODE HERE
-
+const gitStatusDefinition = "Git status is a command that lets you see tracked, and untracked files and changes "
+console.log(gitStatusDefinition)
 //////////////////PROBLEM 6////////////////////
 /*
     Create a variable called 'gitAddDefinition'.  
@@ -53,7 +59,11 @@
 */
 
 //CODE HERE
+const gitAddDefinition = "Git add basically tells git that you want to include updates to a particular file"
+console.log(gitAddDefinition)
 
+const gitAddCode = "git add -A, git add ."
+console.log(gitAddCode)
 //////////////////PROBLEM 7////////////////////
 /*
     Create a variable called 'gitCommitDefinition'.  
@@ -64,7 +74,11 @@
 */
 
 //CODE HERE
+const gitCommitDefinition = "Git commit is a snapshot of the projects current staged changes"
+console.log(gitCommitDefinition)
 
+const gitCommitCode = `git commit -m "initial commit" `
+console.log(gitCommitCode)
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -73,3 +87,5 @@
 */
 
 //CODE HERE
+const gitPushDefinition = "Git Push is used to upload a local repository to a remote repository"
+console.log(gitPushDefinition)
