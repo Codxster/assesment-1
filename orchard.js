@@ -50,6 +50,29 @@ const pinkPrice = .55
 */
 
 // CODE HERE
+
+
+// KYLES ANSWER
+//-------------------------------------
+
+// let totalAcres = 0
+
+// for (let i = 0; i < totalAcres.length; i++) {
+//     totalAcres += fujiAcres[i]
+    
+// }
+// for (let i = 0; i < galaAcres.length; i++) {
+//     totalAcres += galaAcres[i]
+// }
+// for (let i = 0; i < pinkAcres.length; i++) {
+//     totalAcres += pinkAcres[i]
+// }
+
+// console.log(totalAcres)
+
+
+
+
 const totalAcresArray = [2,3,3,2,2,2,1,5,2,4,3,6,2,4,1,5,4,2,1,5,4];
     let sum = 0;
     let i = 0;
@@ -75,12 +98,21 @@ let totalAcres = 63
 
 // CODE HERE
 
-fujiAcresTotal = 15
-galaAcresTotal = 27
-pinkAcresTotal = 22
 
-let averageDailyAcres = (fujiAcresTotal + galaAcresTotal + pinkAcresTotal) / 3
+//KYLES ANSWER
+//-------------------------
+let averageDailyAcres = totalAcres / 7
+
 console.log(averageDailyAcres)
+
+
+
+// fujiAcresTotal = 15
+// galaAcresTotal = 27
+// pinkAcresTotal = 22
+
+//let averageDailyAcres = (fujiAcresTotal + galaAcresTotal + pinkAcresTotal) / 3
+//console.log(averageDailyAcres)
 
 
 
@@ -120,6 +152,15 @@ let days = 0
 // CODE HERE
 
 
+// KYLES ANSWER
+// ---------------------------
+
+while(acresLeft > 0) {
+    days++
+    acresLeft -= averageDailyAcres
+}
+
+console.log(days)
 
 // PROBLEM 4
 
@@ -147,9 +188,32 @@ let days = 0
 
 // CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+
+
+//KYLES ANSWER
+//-------------------------
+let fujiTons = []
+let galaTons = []
+let pinkTons = []
+
+for (let i = 0; i < fujiAcres.length; i++) {
+    let tonConversion = fujiAcres[i] * 6.5
+    fujiTons.push(tonConversion)
+} 
+
+for (let i = 0; i < galaAcres.length; i++) {
+    let tonConversion = galaAcres[i] * 6.5
+    galaTons.push(tonConversion)
+} 
+
+for (let i = 0; i < pinkAcres.length; i++) {
+    let tonConversion = pinkAcres[i] * 6.5
+    pinkTons.push(tonConversion)
+} 
+
+console.log(fujiTons)
+console.log(galaTons)
+console.log(pinkTons)
 
 
 
@@ -174,12 +238,27 @@ let days = 0
 
 // CODE HERE 
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+// KYLES ANSWER
+// -----------------------------
 
+let fujiPounds = 0
+let galaPounds = 0
+let pinkPounds = 0
 
+for (let i = 0; i < fujiTons.length; i++){
+    fujiPounds += fujiTons[i] * 2000
+}
 
+for (let i = 0; i < galaTons.length; i++){
+    galaPounds += galaTons[i] * 2000
+}
+for (let i = 0; i < pinkTons.length; i++){
+    pinkPounds += pinkTons[i] * 2000
+}
+
+console.log(fujiPounds)
+console.log(galaPounds)
+console.log(pinkPounds)
 
 
 
@@ -201,9 +280,17 @@ let days = 0
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+
+
+// KYLES ANSWER
+// ------------------------------
+let fujiProfit = fujiPounds * fujiPrice
+let galaProfit = galaPounds * galaPrice
+let pinkProfit = pinkPounds * pinkPrice
+
+console.log(fujiProfit)
+console.log(galaProfit)
+console.log(pinkProfit)
 
 
 
@@ -221,3 +308,12 @@ let days = 0
 */
 
 // CODE HERE
+
+
+
+// KYLES ANSWER
+// -----------------------------------------------
+
+let totalProfit = fujiProfit + galaProfit + pinkProfit
+
+console.log(totalProfit)
